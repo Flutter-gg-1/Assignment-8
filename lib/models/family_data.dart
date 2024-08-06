@@ -17,8 +17,27 @@ class FamilyData{
 
       if(val["first_name"] == firstName){
         print(val);
+        return;
       }
     }
+    print("\n ###########    Not Found    #############\n");
+
+
+
+  }
+
+
+
+  void findUserEmail({required String email}){
+
+    for(var val in familyList){
+
+      if(val["email"] == email){
+        print(val);
+        return;
+      }
+    }
+    print("\n ###########    Not Found    #############\n");
 
 
   }

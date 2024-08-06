@@ -16,6 +16,8 @@ void main(){
   // familyData.showAllFamilys();
 
 
-  familyData.findUserFirstName(firstName: "Frederick");
+  // familyData.findUserFirstName(firstName: "Frederick");
+
+  familyData.findUserEmail(email: "larsonmcfarland@rocklogic.com");
   
 }
