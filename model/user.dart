@@ -40,6 +40,9 @@ class User {
   }
 
   static List<Map<String, dynamic>?> displayAllUsers() {
+      for (var user in usersList) {
+      user.printUserInformation();
+    }
     return usersList.map((user) {
       return user.toJson();
     }).toList();
@@ -48,6 +51,7 @@ class User {
   static Map<String, dynamic>? displayUserByName(String firstName) {
     for (var user in usersList) {
       if (user.firstName == firstName) {
+        user.printUserInformation();
         return user.toJson();
       }
     }
@@ -57,18 +61,29 @@ class User {
   static Map<String, dynamic>? displayUserByEmail(String email) {
     for (var user in usersList) {
       if (user.email == email) {
+        user.printUserInformation();
         return user.toJson();
       }
     }
     return null;
   }
 
-  static Map<String,dynamic>? displayChildren(String firstName){
+  static Map<String, dynamic>? displayChildren(String firstName) {
     for (var user in usersList) {
       if (user.firstName == firstName) {
+        user.children!.printChildrenInformation();
         return user.children?.toJson();
       }
     }
     return null;
+  }
+
+  printUserInformation() {
+    print('ID: $id');
+    print('First Name: $firstName');
+    print('Last Name: $lastName');
+    print('Email: $email');
+    print('Children: $children');
+    print('');
   }
 }

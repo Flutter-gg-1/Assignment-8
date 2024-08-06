@@ -22,4 +22,11 @@ class Children {
 
     return map;
   }
+
+  printChildrenInformation() {
+    print('First Name: $firstName');
+    print('Last Name: $lastName');
+    print('Email: $email');
+    print('');
+  }
 }
