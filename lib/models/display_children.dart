@@ -1,8 +1,9 @@
-import 'package:assignment8_json/dataset.dart';
-import 'package:assignment8_json/models/children.dart';
-import 'package:assignment8_json/models/user.dart';
+import 'package:assignment8_json/dataset.dart';         // dataset
+import 'package:assignment8_json/models/user.dart';     // user class
+import 'package:assignment8_json/models/children.dart'; // children class
 
-Map<String,dynamic> displayChildren(String firstName) {
+// function to display children of a specific first name
+Map<String,dynamic> displayChildren({required String firstName}) {
   for(var data in dataset) {
     User user = User.fromJson(data);
     if(user.firstName == firstName) {

@@ -1,22 +1,35 @@
-import 'package:assignment8_json/models/display_all.dart';
-import 'package:assignment8_json/models/display_by_email.dart';
-import 'package:assignment8_json/models/display_by_first_name.dart';
-import 'package:assignment8_json/models/display_children.dart';
-import 'package:assignment8_json/models/user.dart';
-import 'package:assignment8_json/dataset.dart';
+import 'package:assignment8_json/dataset.dart';                       // dataset
+import 'package:assignment8_json/models/display_all.dart';            // function to display all users
+import 'package:assignment8_json/models/display_by_email.dart';       // function to display a user with a specific email
+import 'package:assignment8_json/models/display_by_first_name.dart';  // function to display a user with a specific first name
+import 'package:assignment8_json/models/display_children.dart';       // function to display children of a specific first name
+import 'package:assignment8_json/models/user.dart';                   // user class
+import 'package:assignment8_json/models/children.dart';               // children class
 
 void main(List<String> arguments) {
   print('Assignment 8 : Reading json');
-  List<User> users = [];
-  for(var data in dataset) {
-    User user = User.fromJson(data);
-    users.add(user);
-  }
-  print(displayAll(users));
   print("-"*40);
-  print(displayByname("Keisha"));
+  
+  print("Object testing : ");
+  User user = User.fromJson(dataset[2]);
+  print('user name : ${user.firstName} ${user.lastName}'); // Larson Mcfarland
+  Children children = Children.fromJson(user.children);
+  print("${user.firstName}'s child is ${children.firstName} ${children.lastName}"); // Betty Gardner
   print("-"*40);
-  print(displayByEmail("alexisanthony@rocklogic.com"));
+  
+  print("Question 3 : ");
+  print(displayAll()); // as json
   print("-"*40);
-  print(displayChildren("Keisha"));
+
+  print("Question 4 : ");
+  print(displayByname(firstName: "Keisha")); // as json
+  print("-"*40);
+  
+  print("Question 5 : ");
+  print(displayByEmail(email: "alexisanthony@rocklogic.com")); // as json
+  print("-"*40);
+
+  print("Bonus Question : ");
+  print(displayChildren(firstName: "Keisha")); // as json, Logan Burt
+  print("-"*40);
 }

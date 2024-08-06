@@ -1,10 +1,13 @@
+// class to represent user
 class User {
+  // class variables
   final String id;
   final String firstName;
   final String lastName;
   final String email;
   final Map<String, String> children;
 
+  // constructor
   User(
       {required this.id,
       required this.firstName,
@@ -12,6 +15,7 @@ class User {
       required this.email,
       required this.children});
 
+  // factory or named constructor used to extract values from json and create an instance of user class
   factory User.fromJson(Map<String, dynamic> json) {
     return User(
         id: json['_id'],
@@ -21,6 +25,7 @@ class User {
         children: json['children']);
   }
 
+  // method to return object variables as json
   Map<String,dynamic> toJson() {
     return {
       '_id' : id,

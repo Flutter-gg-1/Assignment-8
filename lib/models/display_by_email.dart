@@ -1,7 +1,8 @@
-import 'package:assignment8_json/models/user.dart';
-import 'package:assignment8_json/dataset.dart';
+import 'package:assignment8_json/models/user.dart'; // user class
+import 'package:assignment8_json/dataset.dart';     // dataset
 
-Map<String,dynamic> displayByEmail(String email) {
+// function to display a user with a specific email
+Map<String,dynamic> displayByEmail({required String email}) {
   for(var data in dataset) {
     User user = User.fromJson(data);
     if(user.email == email) {
