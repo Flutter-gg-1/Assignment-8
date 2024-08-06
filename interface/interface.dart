@@ -23,15 +23,38 @@ void interface(List<Parent> parents) {
         printParentsList(parents);
         break;
       case == "2":
-        searchParentByName(parents);
+        late String firstName;
+        try {
+          print("input the first name of parent not case sensitive");
+          firstName = stdin.readLineSync()!;
+        } catch (e) {
+          print("there an error when input first parent name");
+        }
+        searchParentByName(parents, firstName);
+
         break;
 
       case == "3":
-        searchParentByEmail(parents);
+        late String email;
+        try {
+          print("input the parent email not case sensitive");
+          email = stdin.readLineSync()!;
+        } catch (e) {
+          print("there an error when input email");
+        }
+        searchParentByEmail(parents, email);
         break;
 
       case == "4":
-        searchParentByChild(parents);
+        late String childName;
+        try {
+          print(
+              "input the first name of the child of parent not case sensitive");
+          childName = stdin.readLineSync()!;
+        } catch (e) {
+          print("there an error when input first parent name");
+        }
+        searchParentByChild(parents, childName);
         break;
       default:
         print("miss match input make sure to select one the these option");
@@ -46,15 +69,9 @@ void printParentsList(List<Parent> parents) {
   }
 }
 
-void searchParentByName(List<Parent> parents) {
-  late String firstName;
+void searchParentByName(List<Parent> parents, firstName) {
   bool found = false;
-  try {
-    print("input the first name of parent not case sensitive");
-    firstName = stdin.readLineSync()!;
-  } catch (e) {
-    print("there an error when input first parent name");
-  }
+
   for (var parent in parents) {
     if (parent.firstName.toLowerCase() == firstName.trim().toLowerCase()) {
       print("the parent was found:");
@@ -68,15 +85,8 @@ void searchParentByName(List<Parent> parents) {
   }
 }
 
-void searchParentByEmail(List<Parent> parents) {
-  late String email;
+void searchParentByEmail(List<Parent> parents, String email) {
   bool found = false;
-  try {
-    print("input the parent email not case sensitive");
-    email = stdin.readLineSync()!;
-  } catch (e) {
-    print("there an error when input email");
-  }
   for (var parent in parents) {
     if (parent.parentEmail.toLowerCase() == email.trim().toLowerCase()) {
       print("the parent was found:\n");
@@ -90,15 +100,8 @@ void searchParentByEmail(List<Parent> parents) {
   }
 }
 
-void searchParentByChild(List<Parent> parents) {
-  late String childName;
+void searchParentByChild(List<Parent> parents, String childName) {
   bool found = false;
-  try {
-    print("input the first name of the child of parent not case sensitive");
-    childName = stdin.readLineSync()!;
-  } catch (e) {
-    print("there an error when input first parent name");
-  }
   for (var parent in parents) {
     if (parent.children.firstName.toLowerCase() ==
         childName.trim().toLowerCase()) {
