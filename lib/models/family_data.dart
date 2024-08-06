@@ -11,6 +11,23 @@ class FamilyData{
 
 
 
+  void findUserChild({required String firstName}){
+
+    for(var val in familyList){
+
+      if(val["first_name"] == firstName){
+        print(val["children"]);
+        return;
+      }
+    }
+    print("\n ###########    Not Found    #############\n");
+
+
+
+  }
+
+
+
   void findUserFirstName({required String firstName}){
 
     for(var val in familyList){
