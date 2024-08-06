@@ -27,9 +27,28 @@ cd /Users/amjadelahi/dart-bootCamp/Assignment-8/assignment8
 ```bash
 dart run
 ```
- 4. The output is:
+ 4. The output of displaying all users is:
       
 <p align="center">
-<img src="assets/exercise1.png" alt="exercise1" width="400"/>
+<img src="assets/display_all_users.png" alt="display_all_users" width="400"/>
 <br/>
+
+5. The output of displaying user with first name:
+
+<p align="center">
+<img src="assets/display_user_with_firstName.png" alt="display_user_with_firstName" width="400"/>
+<br/>
+
+6. The output of displaying user with email:
+
+<p align="center">
+<img src="assets/display_user_with_email.png" alt="isplay_user_with_email" width="400"/>
+<br/>
+
+7. The output of displaying user's children with first name:
+
+<p align="center">
+<img src="assets/display_user_children.png" alt="display_user_children" width="400"/>
+<br/>
+
 
