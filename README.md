@@ -1,129 +1,57 @@
-repository data is 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/eab8d15e-269d-4664-a124-221fc43ea36a" alt="Tuwaiq" width="400"/>
+<br/>
 
-```dart 
-[
-  {
-    "_id": "5df38f6e695566a48211da8f",
-    "first_name": "Blankenship",
-    "last_name": "Vincent",
-    "email": "blankenshipvincent@rocklogic.com",
-    "children": {
-      "first_name": "Robinson",
-      "last_name": "Alston",
-      "email": "robinsonalston@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e8a4caadc4aa0dc36",
-    "first_name": "Frederick",
-    "last_name": "Stuart",
-    "email": "frederickstuart@rocklogic.com",
-    "children": {
-      "first_name": "Reed",
-      "last_name": "Velez",
-      "email": "reedvelez@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6ed1b60849d8418f07",
-    "first_name": "Larson",
-    "last_name": "Mcfarland",
-    "email": "larsonmcfarland@rocklogic.com",
-    "children": {
-      "first_name": "Betty",
-      "last_name": "Gardner",
-      "email": "bettygardner@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e309c25aad80b173a",
-    "first_name": "Keisha",
-    "last_name": "Hatfield",
-    "email": "keishahatfield@rocklogic.com",
-    "children": {
-      "first_name": "Logan",
-      "last_name": "Burt",
-      "email": "loganburt@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e6f1b688895260cf4",
-    "first_name": "Alexis",
-    "last_name": "Anthony",
-    "email": "alexisanthony@rocklogic.com",
-    "children": {
-      "first_name": "Dale",
-      "last_name": "Camacho",
-      "email": "dalecamacho@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e915a301a32d4dade",
-    "first_name": "Bonner",
-    "last_name": "Banks",
-    "email": "bonnerbanks@rocklogic.com",
-    "children": {
-      "first_name": "Leach",
-      "last_name": "Moran",
-      "email": "leachmoran@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e2d2efbfc82143676",
-    "first_name": "Josephine",
-    "last_name": "Conrad",
-    "email": "josephineconrad@rocklogic.com",
-    "children": {
-      "first_name": "Warner",
-      "last_name": "Aguirre",
-      "email": "warneraguirre@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6ed4245b97f97839f6",
-    "first_name": "Angelia",
-    "last_name": "Mcbride",
-    "email": "angeliamcbride@rocklogic.com",
-    "children": {
-      "first_name": "Craig",
-      "last_name": "Gould",
-      "email": "craiggould@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e0e5f8dca341cdcaa",
-    "first_name": "Marsha",
-    "last_name": "Gillespie",
-    "email": "marshagillespie@rocklogic.com",
-    "children": {
-      "first_name": "Hammond",
-      "last_name": "Rios",
-      "email": "hammondrios@rocklogic.com"
-    }
-  }
-]
+# Assignment 8
+
+## Description
+
+ Working with Json data to create functions to display all users, display one user by first_name, display one user by email.
+
+## Requirements
+
+ In order to run the application, this project requires a Dart SDK and a command line interface (CML).
+
+## install dart SDK
+ install dart SDK from [dart documentation](https://dart.dev/get-dart)
+
+## How to run the project
+
+1. Open terminal or CMD.
+2. Navigate to the project path, such as 
+```bash
+cd /Users/amjadelahi/dart-bootCamp/Assignment-8/assignment8
+
 ```
+ 3. Run the application with a command: 
+```bash
+dart run
+```
+ 4. The output of displaying all users is:
+      
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5c4cf2f7-9b70-4a35-85bd-208b9704fdc3" alt="display_all_users" width="800"/>
+<br/>
 
-## Assignment:
+5. The output of displaying user with first name:
 
-In this assignment, you will create functions to display all users, display one user by first_name, display one user by email.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/2554c8fb-7c87-489c-9a98-6857d809a87e"
+ alt="display_user_with_firstName" width="800"/>
+<br/>
 
-## Requirements:
-1. Create a Dart project
-2. Create a “model” file to represent users object with the required properties.
-3. Implement a function to display all users. This function should return a JSON data containing all users object.
-4. Implement a function to display one user by first_name. This function should accept a first_name in parameter and return a JSON data containing the user object with the matching first_name.
-5. Implement a function to display one user by email. This function should accept an email in parameter and return a JSON data containing the user object with the matching email.
+6. The output of displaying user with email:
 
-## Evaluation Criteria:
-The assignmen will be evaluated based on the following criteria:
-1. Completion: The extent to which the assignment meets all the minimum requirements, including the extra credit ideas if implemented.
-2. Quality: The overall quality of the project, including the organization, and ease of maintenance. Well-structured and readable code will be favorably evaluated.
+<p align="center">
+<img src="https://github.com/user-attachments/assets/44ec875f-31b4-477f-817a-115af02d6dad" alt="isplay_user_with_email" width="800"/>
+<br/>
 
-## Bonus
-Implement a function to display the children of one user. This function should accept a first_name in parameter and return a JSON data containing the children object with the matching first_name.
 
-## Submission Details:
-Deadline: 7th August 2024
-Submission Format: Provide your Dart code file(s) along with a README file explaining your implementation.
-Good luck, and happy coding!
+7. The output of displaying user's children with first name:
+
+<p align="center">
+<img src="https://github.com/user-attachments/assets/16a23a03-b316-4483-b51c-b70621fe2fc5"
+alt="display_user_children" width="800"/>
+<br/>
+
+
