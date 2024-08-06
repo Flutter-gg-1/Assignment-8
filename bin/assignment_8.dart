@@ -29,15 +29,16 @@ void main(List<String> arguments) {
       case 1:
         User.displayAllUsers();
       case 2:
-        stdout.write(cyan('\nUser\' first name: '));
+        stdout.write(cyan('User\' first name: '));
         String firstName = stdin.readLineSync()!;
         User.displayUserByName(firstName);
       case 3:
-        stdout.write(cyan('\nUser\' email: '));
+        stdout.write(cyan('User\' email: '));
         String email = stdin.readLineSync()!;
         User.displayUserByEmail(email);
       case 4:
-        stdout.write(cyan('\nEnter User\' first name to display their children: '));
+        stdout
+            .write(cyan('Enter User\' first name to display their children: '));
         String firstName = stdin.readLineSync()!;
         User.displayChildren(firstName);
       case 0:

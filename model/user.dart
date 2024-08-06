@@ -51,40 +51,42 @@ class User {
 
   static Map<String, dynamic>? displayUserByName(String firstName) {
     for (var user in usersList) {
-      if (user.firstName == firstName) {
+      if (user.firstName!.toLowerCase() == firstName.toLowerCase()) {
         user.printUserInformation();
         return user.toJson();
       }
     }
+    print(red('User Not Found!!'));
     return null;
   }
 
   static Map<String, dynamic>? displayUserByEmail(String email) {
     for (var user in usersList) {
-      if (user.email == email) {
+      if (user.email!.toLowerCase() == email.toLowerCase()) {
         user.printUserInformation();
         return user.toJson();
       }
     }
+    print(red('User Not Found!!'));
     return null;
   }
 
   static Map<String, dynamic>? displayChildren(String firstName) {
     for (var user in usersList) {
-      if (user.firstName == firstName) {
+      if (user.firstName!.toLowerCase() == firstName.toLowerCase()) {
         user.children!.printChildrenInformation();
         return user.children?.toJson();
       }
     }
+    print(red('User Not Found!!'));
     return null;
   }
 
   printUserInformation() {
-    print(green('ID: $id'));
+    print(green('\nID: $id'));
     print(green('First Name: $firstName'));
     print(green('Last Name: $lastName'));
     print(green('Email: $email'));
-    print(green('Children: $children'));
-    print('');
+    children!.printChildrenInformation();
   }
 }

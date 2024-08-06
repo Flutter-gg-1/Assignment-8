@@ -26,9 +26,9 @@ class Children {
   }
 
   printChildrenInformation() {
+    print(green('Children: '));
     print(green('First Name: $firstName'));
     print(green('Last Name: $lastName'));
     print(green('Email: $email'));
-    print('');
   }
 }
