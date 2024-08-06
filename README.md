@@ -30,7 +30,7 @@ Same process applied on `User` class will be applied on `Children` class too.
 
 <img src='./media/children.png' alt='children class' width=500 height=350 style = 'border: 5px solid #1c1651'>
 
-## 2.3 create functions and test objects
+## 2.3 create functions
 We were required to build 4 functions which are described as follows :
 - **2.3.1 displayAll**\
 This function will return a json data containing all users in the dataset
@@ -64,7 +64,22 @@ this function must accept a string "firstName" as a parameter and return a json 
 <br>
 <br>
 
-**Note** : All functions will return null in case of a no match or no data found.
+**Note** : All functions will return empty map `{}` in case of a no match or no data found.
+
+## 2.4 Testing objects
+Let's see the testing process and calling functions !
+
+<img src='./media/main.png' alt='main function' width=500 height=400 style = 'border: 5px solid #1c1651'>
+
+<br>
+<br>
+
+We can see the results by running the command `dart run` in the terminal section or in command line interface.
+
+<img src='./media/result.png' alt='main function' width=900 height=400 style = 'border: 5px solid #1c1651'>
+
+<br>
+<br>
 
 # 3. Conclusion 🏁
 This assignment will get us familiar with what is it like to perform data handling and reading from API.\
