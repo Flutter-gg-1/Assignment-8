@@ -1,5 +1,5 @@
 import 'package:assignment8_json/models/user.dart';
-import '../dataset.dart';
+import 'package:assignment8_json/dataset.dart';
 
 Map<String,dynamic> displayByname(String firstName) {
   for(var data in dataset) {
