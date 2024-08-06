@@ -5,6 +5,12 @@ class Child {
 
   Child({required this.firstName, required this.lastName, required this.email});
 
+  factory Child.fromJson(Map<String, String> json) {
+    return Child(
+        firstName: json['firts_name']!,
+        lastName: json['last_name']!,
+        email: json["email"]!);
+  }
   void parentInfo() {
     print("_" * 20);
     print("child first name: $firstName");
@@ -12,10 +18,4 @@ class Child {
     print("children email: $email");
   }
 
-  factory Child.fromJson(Map<String, String> json) {
-    return Child(
-        firstName: json['firts_name']!,
-        lastName: json['last_name']!,
-        email: json["email"]!);
-  }
 }

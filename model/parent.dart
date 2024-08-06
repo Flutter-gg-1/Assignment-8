@@ -14,6 +14,18 @@ class Parent {
       required this.parentEmail,
       required this.children});
 
+  factory Parent.fromJson(Map<String, dynamic> json) {
+    List<Child> children = [];
+    for (var child in json['children']) {
+      children.add(Child.fromJson(child));
+    }
+    return Parent(
+        parentId: json['_id'],
+        firstName: json['first_name'],
+        lastName: json['last_name'],
+        parentEmail: json['email'],
+        children: children);
+  }
   void parentInfo() {
     print("_" * 20);
     print("Parent ID: $parentId");
