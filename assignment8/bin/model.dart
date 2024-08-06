@@ -11,13 +11,13 @@ class Users {
       required this.email,
       required this.children});
 
-  factory Users.fromJson(Map<String, dynamic> jason) {
+  factory Users.fromJson(Map<String, dynamic> json) {
     return Users(
-        id: jason["_id"],
-        firstName: jason["first_name"],
-        lastName: jason["last_name"],
-        email: jason["email"],
-        children: jason["children"]);
+        id: json["_id"],
+        firstName: json["first_name"],
+        lastName: json["last_name"],
+        email: json["email"],
+        children: json["children"]);
   }
 
   Map<String, dynamic> toJson() {
