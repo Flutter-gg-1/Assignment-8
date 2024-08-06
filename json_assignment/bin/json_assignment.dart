@@ -45,6 +45,7 @@ void main() {
     print("First Name :${userChild.firstName}");
     print("Last Name :${userChild.lastName}");
     print("Email :${userChild.email}");
-    print("Children ${userChild.children.toJson()}");
+    print(
+        "child name :${userChild.children.toJson()["first_name"]} ${userChild.children.toJson()["last_name"]} \nEmail:${userChild.children.toJson()["email"]}");
   }
 }
