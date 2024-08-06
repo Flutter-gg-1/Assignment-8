@@ -13,5 +13,9 @@ void main(){
   FamilyData familyData = FamilyData();
 
   familyData.radyJson(jsonData);
+  // familyData.showAllFamilys();
+
+
+  familyData.findUserFirstName(firstName: "Frederick");
   
 }

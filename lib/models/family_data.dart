@@ -11,6 +11,20 @@ class FamilyData{
 
 
 
+  void findUserFirstName({required String firstName}){
+
+    for(var val in familyList){
+
+      if(val["first_name"] == firstName){
+        print(val);
+      }
+    }
+
+
+  }
+
+
+
   void  radyJson(List <Map<String , dynamic>> lis){
     for(var val in lis){
 
