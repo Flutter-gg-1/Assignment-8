@@ -11,18 +11,16 @@ class FamilyData{
 
 
 
-  
-
-
-  void showAllFamilys(List <Map<String , dynamic>> lis){
-
-
+  void  radyJson(List <Map<String , dynamic>> lis){
     for(var val in lis){
 
       familyList.add(FamilyModel.fromJson(val).toJSon());
     }
+    
+  }
 
 
+  void showAllFamilys(){
 
     for(var val in familyList){
       print(val);

@@ -12,6 +12,6 @@ void main(){
 
   FamilyData familyData = FamilyData();
 
-  familyData.showAllFamilys(jsonData);
+  familyData.radyJson(jsonData);
   
 }
