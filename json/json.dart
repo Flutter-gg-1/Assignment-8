@@ -7,7 +7,8 @@ List familyData = [
     "children": {
       "first_name": "Robinson",
       "last_name": "Alston",
-      "email": "robinsonalston@rocklogic.com"
+      "email": "robinsonalston@rocklogic.com",
+      
     }
   },
   {

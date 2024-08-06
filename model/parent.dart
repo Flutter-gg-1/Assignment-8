@@ -5,7 +5,7 @@ class Parent {
   late String firstName;
   late String lastName;
   late String parentEmail;
-  late List<Child> children;
+  late Child children;
 
   Parent(
       {required this.parentId,
@@ -15,16 +15,12 @@ class Parent {
       required this.children});
 
   factory Parent.fromJson(Map<String, dynamic> json) {
-    List<Child> children = [];
-    for (var child in json['children']) {
-      children.add(Child.fromJson(child));
-    }
     return Parent(
         parentId: json['_id'],
         firstName: json['first_name'],
         lastName: json['last_name'],
         parentEmail: json['email'],
-        children: children);
+        children: Child.fromJson(json['children']));
   }
   void parentInfo() {
     print("_" * 20);
@@ -33,6 +29,6 @@ class Parent {
     print("Parent last name: $lastName");
     print("Parent email: $parentEmail");
     print("Parent children:");
-    print(children);
+    children.childInfo();
   }
 }
