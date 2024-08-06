@@ -1,4 +1,4 @@
-## JSON ASSGINMENT:
+## JSON ASSIGNMENT:
 
 ### Description :
 
