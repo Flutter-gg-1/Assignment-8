@@ -1,5 +1,21 @@
-import 'package:handle_data_with_map/handle_data_with_map.dart' as handle_data_with_map;
+
+import 'data.dart';
+import 'model/user.dart';
 
 void main(List<String> arguments) {
-  print('Hello world: ${handle_data_with_map.calculate()}!');
+
+List<User> userinfo = [];
+
+for (var element in Data.userData) {
+  userinfo.add(User.fromJson(element));
+}
+printUser(userinfo);
+}
+void printUser(List<User> users){
+  for (var element in users) {
+    print('id : ${element.id}');
+    print('Name : ${'${element.firstName} ${element.lastName}'}');
+    print('email : ${element.email}');
+    //print('Name : ${element.firstName + ' '+element.lastName}');
+  }
 }
