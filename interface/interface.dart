@@ -9,8 +9,8 @@ void interface(List<Parent> parents) {
     print("\n");
     print('* ' * 20);
     print(
-        "1- display all data | 2-search by name | 3-search by email | 0-exit");
-    print("4-search parent by child first name");
+        "1- display all data | 2-search by name | 3-search by email | 4-search parent by child first name");
+    print("0-exit");
     print('* ' * 20);
 
     try {
