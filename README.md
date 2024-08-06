@@ -30,4 +30,4 @@ Represents the children of a person from the JSON data.
 3. Navigate to the project directory in your terminal.
 4. Run the app using the Dart command:
    ```bash
-   dart main.dart
+   dart run
