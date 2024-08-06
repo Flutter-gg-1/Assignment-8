@@ -5,10 +5,12 @@ void main() {
   List allUsers = [];
   List oneUserByFirstName = [];
   List oneUserByEmail = [];
+  List oneChildByFirstName = [];
 
   allUsers = getAllData();
   oneUserByFirstName = getOneData1("Bonner");
   oneUserByEmail = getOneData2("angeliamcbride@rocklogic.com");
+  oneChildByFirstName = getOneData3("Craig");
 
   for (var element in allUsers) {
     print("------------------------All Users---------------------------");
@@ -16,7 +18,7 @@ void main() {
     print("First Name :${element.firstName}");
     print("Last Name :${element.lastName}");
     print("Email :${element.email}");
-    print("Children ${element.children}");
+    print("Children ${element.children.toJson()}");
   }
   print("===============================================================");
   for (var element in oneUserByFirstName) {
@@ -25,7 +27,7 @@ void main() {
     print("First Name :${element.firstName}");
     print("Last Name :${element.lastName}");
     print("Email :${element.email}");
-    print("Children ${element.children}");
+    print("Children ${element.children.toJson()}");
   }
   print("===============================================================");
 
@@ -35,6 +37,14 @@ void main() {
     print("First Name :${userEmail.firstName}");
     print("Last Name :${userEmail.lastName}");
     print("Email :${userEmail.email}");
-    print("Children ${userEmail.children}");
+    print("Children ${userEmail.children.toJson()}");
+  }
+  for (var userChild in oneChildByFirstName) {
+    print("----------------Children for One User-----------------------");
+    print("ID :${userChild.id}");
+    print("First Name :${userChild.firstName}");
+    print("Last Name :${userChild.lastName}");
+    print("Email :${userChild.email}");
+    print("Children ${userChild.children.toJson()}");
   }
 }

@@ -3,7 +3,7 @@ class Model {
   String firstName;
   String lastName;
   String email;
-  Map<String, dynamic> children;
+  Children children;
 
   Model(
       {required this.id,
@@ -18,8 +18,15 @@ class Model {
         email: map["email"],
         firstName: map["first_name"],
         lastName: map["last_name"],
-        children: map["children"]);
+        children: Children.fromJson(map["children"]));
   }
+  Map<String, dynamic> toJson() => {
+        '_id': id,
+        'first_name': firstName,
+        'last_name': lastName,
+        'email': email,
+        'children': children,
+      };
 }
 
 class Children {
@@ -30,10 +37,15 @@ class Children {
   Children(
       {required this.firstName, required this.lastName, required this.email});
 
-  factory Children.fromJson(Map<String, String> map) {
+  factory Children.fromJson(Map<String, dynamic> map) {
     return Children(
         firstName: map["first_name"].toString(),
         lastName: map["last_name"].toString(),
         email: map["email"].toString());
   }
+  Map<String, dynamic> toJson() => {
+        'first_name': firstName,
+        'last_name': lastName,
+        'email': email,
+      };
 }
