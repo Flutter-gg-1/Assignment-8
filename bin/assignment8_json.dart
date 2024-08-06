@@ -1,6 +1,7 @@
 import 'package:assignment8_json/models/display_all.dart';
+import 'package:assignment8_json/models/display_by_first_name.dart';
 import 'package:assignment8_json/models/user.dart';
-import '../services/dataset.dart';
+import 'package:assignment8_json/dataset.dart';
 
 void main(List<String> arguments) {
   print('Assignment 8 : Reading json');
@@ -10,4 +11,6 @@ void main(List<String> arguments) {
     users.add(user);
   }
   print(displayAll(users));
+  print("-"*40);
+  print(displayByname("Keisha"));
 }
