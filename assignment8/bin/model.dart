@@ -59,7 +59,7 @@ static displayByName(String name) {
 
   static displayChildren(String name) {
     for (var element in data) {
-      if (element["first_name"] == name) {
+      if (element["children"]["first_name"] == name) {
         final user = Users.fromJson(element);
         print(jsonEncode(user.children));
         return;
