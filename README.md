@@ -25,36 +25,36 @@ Before running the program, ensure you have the following prerequisites:
 ### Installing
 
 1. Clone the repository to your local machine:
-
+```bash
 git clone https://github.com/Abdulaziz-Alamri/Assignment-8.git
-
+```
 
 2. Navigate to the project directory:
-
+```bash
 cd user-management-system
-
+```
 3. Install the required Dart packages:
-
+```bash
 dart pub get
-
+```
 ### Executing Program
 
 To run the program, use the following command:
-
+```bash
 dart run
-
+```
 
 ### Step-by-Step Usage
 
 **Display All Users**
 Enter 1 from the menu to see all users in the system.
 
-[!Start of Program](./assets/images/2.png)
+![Display All users](./assets/images/2.png)
 
 **Display User by First Name**
 Enter 2 and enter the user's first name when prompted and display user's information.
 
-[!Start of Program](./assets/images/3.png)
+![Display User by first name](./assets/images/3.png)
 
 **Display User by Email**
 Enter 3 and enter the user's email address when prompted and display user's information.
@@ -62,7 +62,7 @@ Enter 3 and enter the user's email address when prompted and display user's info
 **Display Children of a User**
 Enter 4 and enter the user's first name to see the information about their children.
 
-[!Start of Program](./assets/images/4.png)
+![Display User's Chiildren](./assets/images/4.png)
 
 **Exit the Program**
 Enter 0 to exit the application.
@@ -86,6 +86,6 @@ Abdulaziz Alamri
 ## Acknowledgments
 Tuwaiq Academy
 
-[!Tuwaiq Academy](./assets/images/Tuwaiq%20Academy.png)
+![Tuwaiq Academy](./assets/images/Tuwaiq%20Academy.png)
 
 
