@@ -1,3 +1,5 @@
+import '../utils/color.dart';
+
 class Children {
   String? firstName;
   String? lastName;
@@ -24,9 +26,9 @@ class Children {
   }
 
   printChildrenInformation() {
-    print('First Name: $firstName');
-    print('Last Name: $lastName');
-    print('Email: $email');
+    print(green('First Name: $firstName'));
+    print(green('Last Name: $lastName'));
+    print(green('Email: $email'));
     print('');
   }
 }

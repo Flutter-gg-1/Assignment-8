@@ -1,14 +1,7 @@
 import '../utils/data.dart';
 import '../model/user.dart';
 import 'dart:io';
-import 'package:ansicolor/ansicolor.dart';
-
-AnsiPen color = AnsiPen()..rgb(r: 1, g: 0.576, b: 0);
-AnsiPen cyan = AnsiPen()..cyan(bold: true);
-AnsiPen green = AnsiPen()..green(bold: true);
-AnsiPen yellow = AnsiPen()..yellow(bold: true);
-AnsiPen blue = AnsiPen()..blue(bold: true);
-AnsiPen red = AnsiPen()..red(bold: true);
+import '../utils/color.dart';
 
 void main(List<String> arguments) {
   for (var i = 0; i < data.length; i++) {
@@ -40,17 +33,17 @@ void main(List<String> arguments) {
         String firstName = stdin.readLineSync()!;
         User.displayUserByName(firstName);
       case 3:
-        stdout.write('\nUser\' email: ');
+        stdout.write(cyan('\nUser\' email: '));
         String email = stdin.readLineSync()!;
         User.displayUserByEmail(email);
       case 4:
-        stdout.write('\nEnter User\' first name to display their children: ');
+        stdout.write(cyan('\nEnter User\' first name to display their children: '));
         String firstName = stdin.readLineSync()!;
         User.displayChildren(firstName);
       case 0:
         isDone = true;
       default:
-        print('Invalid input!! please Enter a number from the list');
+        print(red('Invalid input!! please Enter a number from the list'));
     }
   } while (!isDone);
 }

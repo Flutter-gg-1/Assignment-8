@@ -1,4 +1,5 @@
 import 'children.dart';
+import '../utils/color.dart';
 
 class User {
   String? id;
@@ -40,7 +41,7 @@ class User {
   }
 
   static List<Map<String, dynamic>?> displayAllUsers() {
-      for (var user in usersList) {
+    for (var user in usersList) {
       user.printUserInformation();
     }
     return usersList.map((user) {
@@ -79,11 +80,11 @@ class User {
   }
 
   printUserInformation() {
-    print('ID: $id');
-    print('First Name: $firstName');
-    print('Last Name: $lastName');
-    print('Email: $email');
-    print('Children: $children');
+    print(green('ID: $id'));
+    print(green('First Name: $firstName'));
+    print(green('Last Name: $lastName'));
+    print(green('Email: $email'));
+    print(green('Children: $children'));
     print('');
   }
 }
