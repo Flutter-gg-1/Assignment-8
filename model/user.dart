@@ -1,3 +1,5 @@
+import 'children.dart';
+
 class User {
   String? id;
   String? firstName;
@@ -45,44 +47,28 @@ class User {
 
   static Map<String, dynamic>? displayUserByName(String firstName) {
     for (var user in usersList) {
-      if(user.firstName == firstName){
+      if (user.firstName == firstName) {
         return user.toJson();
       }
     }
     return null;
   }
+
   static Map<String, dynamic>? displayUserByEmail(String email) {
     for (var user in usersList) {
-      if(user.email == email){
+      if (user.email == email) {
         return user.toJson();
       }
     }
     return null;
   }
-}
 
-class Children {
-  String? firstName;
-  String? lastName;
-  String? email;
-
-  Children(
-      {required this.firstName, required this.lastName, required this.email});
-
-  factory Children.fromJson(Map<String, dynamic> json) {
-    return Children(
-        firstName: json['first_name'],
-        lastName: json['last_name'],
-        email: json['email']);
-  }
-
-  Map<String, dynamic> toJson() {
-    Map<String, dynamic> map = {};
-
-    map['first_name'] = firstName;
-    map['last_name'] = lastName;
-    map['email'] = email;
-
-    return map;
+  static Map<String,dynamic>? displayChildren(String firstName){
+    for (var user in usersList) {
+      if (user.firstName == firstName) {
+        return user.children?.toJson();
+      }
+    }
+    return null;
   }
 }
