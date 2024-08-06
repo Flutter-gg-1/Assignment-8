@@ -10,7 +10,7 @@ The User Information System is designed to allow users display information. Each
 - Display information about children of a specific user
 
 The application is built in Dart and uses ANSI color package for text formatting in the console.
-```markdown
+
 [!Start of Program](./assets/images/1.png)
 
 ## Getting Started
@@ -25,35 +25,35 @@ Before running the program, ensure you have the following prerequisites:
 ### Installing
 
 1. Clone the repository to your local machine:
-```bash
+
 git clone https://github.com/Abdulaziz-Alamri/Assignment-8.git
-```
+
 
 2. Navigate to the project directory:
-```bash
+
 cd user-management-system
-```
+
 3. Install the required Dart packages:
-```bash
+
 dart pub get
-```
+
 ### Executing Program
 
 To run the program, use the following command:
-```bash
+
 dart run
-```
+
 
 ### Step-by-Step Usage
 
 **Display All Users**
 Enter 1 from the menu to see all users in the system.
-```markdown
+
 [!Start of Program](./assets/images/2.png)
 
 **Display User by First Name**
 Enter 2 and enter the user's first name when prompted and display user's information.
-```markdown
+
 [!Start of Program](./assets/images/3.png)
 
 **Display User by Email**
@@ -61,7 +61,7 @@ Enter 3 and enter the user's email address when prompted and display user's info
 
 **Display Children of a User**
 Enter 4 and enter the user's first name to see the information about their children.
-```markdown
+
 [!Start of Program](./assets/images/4.png)
 
 **Exit the Program**
