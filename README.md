@@ -11,7 +11,7 @@ The User Information System is designed to allow users display information. Each
 
 The application is built in Dart and uses ANSI color package for text formatting in the console.
 
-[!Start of Program](./assets/images/1.png)
+![Start of Program](./assets/images/1.png)
 
 ## Getting Started
 
