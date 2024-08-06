@@ -1,7 +1,7 @@
 
 
 
-List <Map<String , dynamic>> json = [
+List <Map<String , dynamic>> jsonData = [
   {
     "_id": "5df38f6e695566a48211da8f",
     "first_name": "Blankenship",
