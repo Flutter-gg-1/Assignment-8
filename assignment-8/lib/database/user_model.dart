@@ -8,12 +8,12 @@ class Users {
 
   // Factory method to convert JSON to Users object
   factory Users.fromJson(Map<String, dynamic> json) => Users(
-        users: List<User>.from(json['users'].map((x) => User.fromJson(x))),
+        users: List<User>.from(json["users"].map((x) => User.fromJson(x))),
       );
 
   // Method to convert Users object to JSON
   Map<String, dynamic> toJson() => {
-        'users': List<dynamic>.from(users.map((x) => x.toJson())),
+        "users": List<dynamic>.from(users.map((x) => x.toJson())),
       };
 }
 
