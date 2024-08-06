@@ -1,5 +1,6 @@
-import '../assignment_8.dart';
+//Model file to represent users object
 
+//Class User
 class User {
   String? _id;
   String? firstName;
@@ -20,36 +21,19 @@ class User {
         children: Children.fromjson(json["children"]));
   }
 
-  tojson() {
+  Map<String, dynamic> tojson() {
     Map<String, dynamic> map = {
       "_id": _id,
       "first_name": firstName,
       "last_name": lastName,
       "email": email,
-      "children": children
+      "children": children?.toJson()
     };
     return map;
   }
-
-  displayByFirstname({required String firstName}) {
-    for (var element in usersList) {
-      if (element.firstName == firstName) {
-        print("\n------result of the enterd name $firstName: ------\n");
-        print(element.tojson());
-      }
-    }
-  }
-
-  displayByEmail({required String email}) {
-    for (var element in usersList) {
-      if (element.email == email) {
-        print("\n------result of the enterd email $email: ------\n");
-        print(element.tojson());
-      }
-    }
-  }
 }
 
+//Class Children
 class Children {
   String? firstName;
   String? lastName;
@@ -63,5 +47,13 @@ class Children {
         firstName: json["first_name"],
         lastName: json["last_name"],
         email: json["email"]);
+  }
+  Map<String, dynamic> toJson() {
+    Map<String, dynamic> map = {
+      "first_name": firstName,
+      "last_name": lastName,
+      "email": email,
+    };
+    return map;
   }
 }
