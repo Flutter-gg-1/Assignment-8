@@ -13,12 +13,12 @@ void main(){
   FamilyData familyData = FamilyData();
 
   familyData.radyJson(jsonData);
-  // familyData.showAllFamilys();
+  familyData.showAllFamilys();
 
 
-  // familyData.findUserFirstName(firstName: "Frederick");
+  familyData.findUserFirstName(firstName: "Frederick");
 
-  // familyData.findUserEmail(email: "larsonmcfarland@rocklogic.com");
+  familyData.findUserEmail(email: "larsonmcfarland@rocklogic.com");
   familyData.findUserChild(firstName: "Larson");
 
 
