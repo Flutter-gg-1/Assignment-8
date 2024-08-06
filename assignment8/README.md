@@ -1,9 +1,9 @@
 
 <p align="center">
-  <img src="./assets/logo-h.png" alt="Tuwaiq" width="200" >
+  <img src="./assets/logo-h.png" alt="Tuwaiq" width="400" >
   <p align="center">
-  <img src="./assets/pngegg.png" alt="Dart" width="200"/>
-</div>
+  <img src="./assets/pngegg.png" alt="Dart" width="300"/>
+
 
 
 # JSON in Dart
@@ -51,11 +51,19 @@ dart run
 - There is four additional functions that used to display all users, display one user by `first_name`, display one user by `email` and children of one user by `first_name`:
 
 1- First one will print all data in `repository_data` like id,first name, last name, email, and map of children.
+<p align="center">
+  <img src="./assets/allUsers.png" alt="Dart" width="400"/>
 
 2- The second one will use user f`irst name` to print all user data if it is match.
+<p align="center">
+  <img src="./assets/byName.png" alt="Dart" width="450"/>
 
 3- This method will print all user data using user's `email`.
+<p align="center">
+  <img src="./assets/byEmail.png" alt="Dart" width="450"/>
 
 4- the last one will print map of `children` by user's `first name`.
+<p align="center">
+  <img src="./assets/children.png" alt="Dart" width="450"/>
 
 
