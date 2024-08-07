@@ -9,8 +9,7 @@ void main() {
   //print all users
   for (var user in users) {
     print(user.allUsersTojson());
-    print("-----------------");
-
+  print("-----------------");
   //print user info based on name
   print(user.userByFirstName("Blankenship",users));
   //print user info based on email
