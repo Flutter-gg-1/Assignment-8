@@ -1,5 +1,7 @@
-import 'package:assignment8/assignment8.dart' as assignment8;
+// import 'package:assignment8/users.dart';
+// import 'package:assignment8/model/json.dart';
+// import 'package:assignment8/users.dart';
 
-void main(List<String> arguments) {
-  print('Hello world: ${assignment8.calculate()}!');
+void main() {
+  
 }
