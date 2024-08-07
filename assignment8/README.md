@@ -54,7 +54,7 @@ dart run
 <p align="center">
   <img src="./assets/allUsers.png" alt="Dart" width="400"/>
 
-2- The second one will use user f`irst name` to print all user data if it is match.
+2- The second one will use user `first name` to print all user data if it is match.
 <p align="center">
   <img src="./assets/byName.png" alt="Dart" width="450"/>
 
