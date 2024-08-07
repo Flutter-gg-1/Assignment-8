@@ -1,4 +1,3 @@
-//1
 class User {
   final String id;
   final String firstName;
@@ -12,7 +11,7 @@ class User {
       required this.lastName,
       required this.email,
       required this.children});
-  //2
+  //extract values from json and create an instance of user class
   factory User.frommjson(Map<String, dynamic> json) {
     return User(
         id: json['_id'],
@@ -21,7 +20,7 @@ class User {
         email: json['email'],
         children: Children.fromJson(json["children"]));
   }
-
+  //method to return object variables as json
   Map<String, dynamic> toJson() {
     Map<String, dynamic> map = {};
     map["_id"] = id;
@@ -43,12 +42,14 @@ class Children {
   Children(
       {required this.email, required this.firstName, required this.lastName});
 
+  //extract values from json and create an instance of user class
   factory Children.fromJson(Map<String, dynamic> json) {
     return Children(
         email: json['email'],
         firstName: json['first_name'],
         lastName: json['last_name']);
   }
+  //method to return object variables as json
   Map<String, dynamic> toJson() {
     Map<String, dynamic> map = {};
     map["email"] = email;

@@ -7,6 +7,7 @@ List<Children> displayChildrenByEmile(String fatherName) {
   for (var element in jsonList) {
     if (element['first_name'] == fatherName) {
       users.add(User.frommjson(element));
+      //to reach the children data
       children.add(Children.fromJson(users.last.children.toJson()));
     }
   }
