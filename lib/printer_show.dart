@@ -47,7 +47,7 @@ void printerChildrenByFatherName(List<Children> childreInfo) {
 //console display all
 void printerAllUsers(List<User> userInfo) {
   print('------' * 6);
-  print('printing by email');
+  print('printing all Data');
   for (var element in userInfo) {
     print('------' * 6);
     print(
