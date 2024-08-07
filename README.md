@@ -1,28 +1,28 @@
 ## Project Idea
 a simple dart project that handle json users data that contain 
-a list of map in this project we have class User that handle user
-info from json data and class UserDisplayer to present this data
+a list of map in this project we have class `User` that handle user
+info from json data and class `UserDisplayer` to present this data
 by using spicfic function .
 
 ### Main function 
 
-#### .fromJson
+### .fromJson
 
-##### Purpose:
+#### Purpose :
  Converts a JSON object into a Dart object.
-##### Usage: 
+#### Usage : 
 Typically used when you receive JSON data from an API or a file and need to convert it into a Dart object.
 
 in this project we have 
-factory constructer as shown below  :
+`factory` constructer as shown below  :
 
 ![alt text](./assest/image/image.png)
 
-#### .toJson
+### .toJson
 
-##### Purpose: 
+#### Purpose : 
  Converts a Dart object into a JSON object.
-##### Usage: 
+#### Usage : 
  Typically used when you need to send Dart object data to an API or save it in a file in JSON format.
 
 in this project we have 
