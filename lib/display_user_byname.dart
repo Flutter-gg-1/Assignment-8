@@ -1,12 +1,14 @@
 import 'package:assignment8/model/json.dart';
 import 'users.dart';
 
-List<User> displayAllData() {
+List<User> displayUserName(String name) {
   List<User> users = [];
 
   for (var element in jsonList) {
-    users.add(User.frommjson(element));
+    if (element['first_name'] == name) {
+      users.add(User.frommjson(element));
+      break;
+    }
   }
-
   return users;
 }
