@@ -1,4 +1,4 @@
-import '../bin/model.dart';
+
 
 class Users {
   final String id;
