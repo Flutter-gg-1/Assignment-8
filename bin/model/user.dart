@@ -20,6 +20,16 @@ factory User.fromJson(Map<String,dynamic> json){
     );
 }
 
+Map<String,dynamic> toJson(){
+    Map<String,dynamic> map = {};
+    map['_id'] = id;
+    map['first_name'] = firstName;
+    map['last_name'] = lastName;
+    map['email'] = email;
+    map['children'] = children;
+
+    return map;
+}
 }
 
 class UserChildren{
@@ -49,15 +59,3 @@ class UserChildren{
     return map;
   }
 }
-
-  //  {
-  //   "_id": "5df38f6e695566a48211da8f",
-  //   "first_name": "Blankenship",
-  //   "last_name": "Vincent",
-  //   "email": "blankenshipvincent@rocklogic.com",
-  //   "children": {
-  //     "first_name": "Robinson",
-  //     "last_name": "Alston",
-  //     "email": "robinsonalston@rocklogic.com"
-  //   }
-  // } 
