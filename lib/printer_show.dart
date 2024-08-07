@@ -46,12 +46,13 @@ void printerChildrenByFatherName(List<Children> childreInfo) {
 
 //console display all
 void printerAllUsers(List<User> userInfo) {
-  print('------' * 6);
+  print('\n\n');
+  print('------------------------------' * 6);
   print('printing all Data');
   for (var element in userInfo) {
-    print('------' * 6);
+    print('----------------------------' * 6);
     print(
         'ID: ${element.id} | Name: ${element.firstName} ${element.lastName} | Email: ${element.email} | Children Name: ${element.children.firstName} ${element.children.lastName} | Email Children:${element.children.email}');
-    print('------' * 6);
+    print('----------------------------' * 6);
   }
 }
