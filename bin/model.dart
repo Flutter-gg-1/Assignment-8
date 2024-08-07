@@ -1,4 +1,5 @@
-List data = [//list of data
+List data = [
+  //list of data
   {
     "_id": "5df38f6e695566a48211da8f",
     "first_name": "Blankenship",

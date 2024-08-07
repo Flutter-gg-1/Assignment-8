@@ -1,5 +1,6 @@
 import '../modles/allUsers.dart';
 import '../bin/model.dart';
+
 //desplay objects by email
 void displayByEmail(String email) {
   for (var element in data) {

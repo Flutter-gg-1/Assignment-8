@@ -7,7 +7,7 @@ import '../Functions/email.dart';
 void main() {
   Users user = Users.fromJson(data[1]);
 
- // displayUserDetails(user); //allusers
- // displayBytheName("Larson"); //function to desplay by the name
- //displayByEmail("blankenshipvincent@rocklogic.com"); //desplay objects by email
+  displayUserDetails(user); //allusers
+  displayBytheName("Larson"); //function to desplay by the name
+  displayByEmail("blankenshipvincent@rocklogic.com"); //desplay objects by email
 }

@@ -1,8 +1,9 @@
 import '../modles/allUsers.dart';
 import '../bin/model.dart';
 
+// Displays user information based on the first name.
 void displayBytheName(String fristName) {
-for (var element in data) {
+  for (var element in data) {
     Users user = Users.fromJson(element);
     if (fristName == user.firstName) {
       print('ID: ${user.id}');
