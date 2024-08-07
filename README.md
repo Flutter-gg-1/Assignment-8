@@ -1,129 +1,69 @@
-repository data is 
 
-```dart 
-[
-  {
-    "_id": "5df38f6e695566a48211da8f",
-    "first_name": "Blankenship",
-    "last_name": "Vincent",
-    "email": "blankenshipvincent@rocklogic.com",
-    "children": {
-      "first_name": "Robinson",
-      "last_name": "Alston",
-      "email": "robinsonalston@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e8a4caadc4aa0dc36",
-    "first_name": "Frederick",
-    "last_name": "Stuart",
-    "email": "frederickstuart@rocklogic.com",
-    "children": {
-      "first_name": "Reed",
-      "last_name": "Velez",
-      "email": "reedvelez@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6ed1b60849d8418f07",
-    "first_name": "Larson",
-    "last_name": "Mcfarland",
-    "email": "larsonmcfarland@rocklogic.com",
-    "children": {
-      "first_name": "Betty",
-      "last_name": "Gardner",
-      "email": "bettygardner@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e309c25aad80b173a",
-    "first_name": "Keisha",
-    "last_name": "Hatfield",
-    "email": "keishahatfield@rocklogic.com",
-    "children": {
-      "first_name": "Logan",
-      "last_name": "Burt",
-      "email": "loganburt@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e6f1b688895260cf4",
-    "first_name": "Alexis",
-    "last_name": "Anthony",
-    "email": "alexisanthony@rocklogic.com",
-    "children": {
-      "first_name": "Dale",
-      "last_name": "Camacho",
-      "email": "dalecamacho@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e915a301a32d4dade",
-    "first_name": "Bonner",
-    "last_name": "Banks",
-    "email": "bonnerbanks@rocklogic.com",
-    "children": {
-      "first_name": "Leach",
-      "last_name": "Moran",
-      "email": "leachmoran@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e2d2efbfc82143676",
-    "first_name": "Josephine",
-    "last_name": "Conrad",
-    "email": "josephineconrad@rocklogic.com",
-    "children": {
-      "first_name": "Warner",
-      "last_name": "Aguirre",
-      "email": "warneraguirre@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6ed4245b97f97839f6",
-    "first_name": "Angelia",
-    "last_name": "Mcbride",
-    "email": "angeliamcbride@rocklogic.com",
-    "children": {
-      "first_name": "Craig",
-      "last_name": "Gould",
-      "email": "craiggould@rocklogic.com"
-    }
-  },
-  {
-    "_id": "5df38f6e0e5f8dca341cdcaa",
-    "first_name": "Marsha",
-    "last_name": "Gillespie",
-    "email": "marshagillespie@rocklogic.com",
-    "children": {
-      "first_name": "Hammond",
-      "last_name": "Rios",
-      "email": "hammondrios@rocklogic.com"
-    }
-  }
-]
+<p align="center">
+  <img src="./assignment8/assets/logo-h.png" alt="Tuwaiq" width="400" >
+  <p align="center">
+  <img src="./assignment8/assets/pngegg.png" alt="Dart" width="300"/>
+
+
+
+# JSON in Dart
+Using jason with repository data.
+
+## introduction
+ in this Exercise we will use jason with repository data to display all users, display one user by `first_name`, display one user by `email` and children of one user by `first_name`.
+
+ ## Getting started
+ ### Dependencies
+You need to install the Dart programming language.
+
+### Executing program
+1- Fork the Repository.
+2- Copy url then go to terminal and write: 
+```
+git clone ‹url›
+```
+3- Go to the cloned project using:
+```
+ cd < PROJECT-NAME> /
+ ``` 
+4- Create a new branch and checkout this branch: 
+```
+git checkout -b branch-name
+```
+5- To create and start dart project 
+```
+dart create project_name
+cd project_name
+code .
 ```
 
-## Assignment:
+6- Now to run the program in terminal write:
+```
+dart run
+```
 
-In this assignment, you will create functions to display all users, display one user by first_name, display one user by email.
 
-## Requirements:
-1. Create a Dart project
-2. Create a “model” file to represent users object with the required properties.
-3. Implement a function to display all users. This function should return a JSON data containing all users object.
-4. Implement a function to display one user by first_name. This function should accept a first_name in parameter and return a JSON data containing the user object with the matching first_name.
-5. Implement a function to display one user by email. This function should accept an email in parameter and return a JSON data containing the user object with the matching email.
+## How dose it works?
+- The ` repository_data.dart` file  contains the data that we will use.
 
-## Evaluation Criteria:
-The assignmen will be evaluated based on the following criteria:
-1. Completion: The extent to which the assignment meets all the minimum requirements, including the extra credit ideas if implemented.
-2. Quality: The overall quality of the project, including the organization, and ease of maintenance. Well-structured and readable code will be favorably evaluated.
+- In the `model` file, the `Users` class provides features that facilitate working with `repository_data`. It includes a `fromJson` factory constructor that creates a Users object from a JSON map and a `toJson` method that converts a Users object back into a JSON map.
 
-## Bonus
-Implement a function to display the children of one user. This function should accept a first_name in parameter and return a JSON data containing the children object with the matching first_name.
+- There is four additional functions that used to display all users, display one user by `first_name`, display one user by `email` and children of one user by `first_name`:
 
-## Submission Details:
-Deadline: 7th August 2024
-Submission Format: Provide your Dart code file(s) along with a README file explaining your implementation.
-Good luck, and happy coding!
+1- First one will print all data in `repository_data` like id,first name, last name, email, and map of children.
+<p align="center">
+  <img src="./assignment8/assets/allUsers.png" alt="Dart" width="400"/>
+
+2- The second one will use user f`irst name` to print all user data if it is match.
+<p align="center">
+  <img src="./assignment8/assets/byName.png" alt="Dart" width="450"/>
+
+3- This method will print all user data using user's `email`.
+<p align="center">
+  <img src="./assignment8/assets/byEmail.png" alt="Dart" width="450"/>
+
+4- the last one will print map of `children` by user's `first name`.
+<p align="center">
+  <img src="./assignment8/assets/children.png" alt="Dart" width="450"/>
+
+
