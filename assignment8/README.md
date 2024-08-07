@@ -60,7 +60,7 @@ dart run
 
 3- This method will print all user data using user's `email`.
 <p align="center">
-  <img src="./assets/byEmail.png" alt="Dart" width="450"/>
+  <img src="./assets/byemail.png" alt="Dart" width="450"/>
 
 4- the last one will print map of `children` by user's `first name`.
 <p align="center">
