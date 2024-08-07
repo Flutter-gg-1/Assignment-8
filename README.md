@@ -29,7 +29,7 @@ To display all users, the `getAllUsers` function in the `UserManager` class is u
 ### Display User by First Name---------------
 To display a user by their first name, the `getUserByFirstName` function is used. Pass the first name as a parameter, and it returns a JSON string of the matching user object.
 
-### Display User by Email--------------
+### Display User by Email----------------
 To display a user by their email, the `getUserByEmail` function is used. Pass the email as a parameter, and it returns a JSON string of the matching user object.
 
 ### Bonus: Display Children by User's First Name----------
